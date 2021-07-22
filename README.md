@@ -19,7 +19,7 @@ let cookieObj = getCookie('cust_tracker')
 // parse cookie and update values to overwrite
 cookieObj = JSON.parse(cookieObj)
 cookieObj.mobile = val
-createCookie(oCookie)
+createCookie(cookieObj)
 
 // executes API call to update database
 processCookie()

@@ -38,9 +38,7 @@ function processCookie() {
           '<a class="cb-anchor" href="#LinkToPolicy" target="_blank">Read Our Policy</a>' +
         '</div>' +
       '</div>'
-    if (bannerElement) {
-      document.body.appendChild(bannerElement)
-    }
+    if (bannerElement) document.body.appendChild(bannerElement)
   }
 
   // post details to backend
@@ -182,9 +180,7 @@ function buildEmptyCookieObject() {
   })
     .then((response) => response.json())
     .then((response) => {
-      if (response.success) {
-        outboundObj.authToken = response.authToken
-      }
+      if (response.success) outboundObj.authToken = response.authToken
     })
     .catch((error) => {
       // handle error

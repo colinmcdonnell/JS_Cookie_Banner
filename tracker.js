@@ -47,7 +47,7 @@ function processCookie() {
 
 /**
  * Get cookie from browser storage
- * @param {string} cookieNmae The name of the cookie being requested.
+ * @param {string} cookieName The name of the cookie being requested.
  * @returns {string} The cookie JSON in string form.
  */
 function getCookie(cookieName) {
